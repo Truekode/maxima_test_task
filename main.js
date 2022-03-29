@@ -15,6 +15,7 @@ const createMyTable = (selector, config) => {
                 <div class="table__cell">${item.phone}</div>
         `);
     })
+    $('.table__row').css('gridTemplateColumns', `repeat(${config.structure.length}, minmax(150px, ${config.structure.length}fr))`);
 }
 
 
